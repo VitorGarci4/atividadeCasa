@@ -3,13 +3,16 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import style  from'./App.module.css'
 import Menu from './components/Menu'
+import Media from './components/Media'
 
 function App() {
 
   return (
     <div>
+      <>
       <Menu/>
-      <h1>qulauqer coisa</h1>
+      <Media/>
+      </>
     </div>
   )
 }

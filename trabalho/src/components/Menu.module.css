@@ -1,15 +1,42 @@
-*{
-    padding: 0%;
-    margin: 0%;
+/* Reset de padding e margin para todos os elementos */
+* {
+    padding: 0;
+    margin: 0;
 }
 
-.cards{
-    background-color: aqua;
+/* Estilização do corpo da página */
+body {
+    display: flex; /* Permitir centralização vertical */
+    justify-content: center; /* Centralizar conteúdo horizontalmente */
+    align-items: center; /* Centralizar conteúdo verticalmente */
+}
+
+/* Estilo dos contêineres de cartões */
+.cards {
+    background-color: #ffffff;
     position: fixed;
     display: flex;
     flex-direction: column;
     top: 0;
     left: 0;
-    width: 10vw;
+    width: 7vw;
     height: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+/* Estilo base para todos os tipos de cartões */
+.reactCard,
+.viteCard,
+.axiosCard,
+.reactRouterCard,
+.NPMCard,
+.nodeCard {
+    position: relative; /* Mudança para position:relative para permitir margens */
+    display: flex;
+    flex-direction: column;
+    border: 8px solid #ffffff !important;
+    border-radius: 20px !important;
+    width: 18vw;
+    margin-bottom: 20px; /* Adicionando margem entre os cartões */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }

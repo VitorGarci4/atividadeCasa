@@ -6,21 +6,23 @@ import {
 } from "react-router-dom";
 import App from './App.jsx'
 import './index.css'
-import Menu from "./components/Menu.jsx";
+
+import Media from "./Media.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
   },
-  // {
-  //   path: "/",
-  //   element: <Menu/>,
-  // },
+ 
+  {
+    path: "/media",
+    element: <Media/>,
+  },
 ]);
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+    <RouterProvider router={router} />
+  </React.StrictMode>
+);
