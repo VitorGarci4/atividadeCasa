@@ -1,4 +1,5 @@
-import style from './Menu'
+
+import style from './Menu.module.css'
 import Media from './Media'
 
 
